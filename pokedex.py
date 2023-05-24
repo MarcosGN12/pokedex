@@ -1,11 +1,13 @@
 from almacenamiento import pokemons
 from util import clear_console
 
+
 def mostrar_pokemons():
     for pokemon in pokemons:
-        nombre_pokemon =  str(pokemon[0]) + " " + pokemon[1]
+        nombre_pokemon = str(pokemon[0]) + " " + pokemon[1]
         print(nombre_pokemon)
-        
+
+
 def mostrar_detalles_pokemon(numero_pokemon):
     for pokemon in pokemons:
         if numero_pokemon == pokemon[0]:
@@ -19,21 +21,23 @@ def mostrar_detalles_pokemon(numero_pokemon):
             print(f"Altura: {pokemon[7]}")
             print(f"Peso: {pokemon[8]}")
             print("")
-        
+
 
 def mostrar_menu():
 
-
-
     while True:
         mostrar_pokemons()
-        opcion = int(input("¿Que Pokemon quieras ver? Introduzca su número: "))
+        numero_pokemon = int(input("¿Que Pokemon quieras ver? Introduzca su número: "))
         clear_console()
-        mostrar_detalles_pokemon(opcion)
-        opcion1 = int(input("0.Cerrar el programa, 1.Volver al menu de pokemons "))
-        
-        if opcion1 == 0:
+
+        mostrar_detalles_pokemon(numero_pokemon)
+
+        print("0.Cerrar el programa.")
+        print("1.Volver al menu de pokemons.")
+        opcion_menu = int(input())
+
+        if opcion_menu == 0:
             break
 
-        if opcion1 == 1:
+        if opcion_menu == 1:
             continue
