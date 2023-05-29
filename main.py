@@ -1,7 +1,3 @@
-from pokedex import mostrar_menu
+from pokedex import mostrar_menu_inicial
 
-print("")
-print("Pokedex")
-print("")
-
-mostrar_menu()
+mostrar_menu_inicial()

@@ -27,7 +27,7 @@ pokemons = [
 		(26, "Raichu", "Eléctrico", 60, 90, 55, 110, "0.8m", "30.0kg"),
 		(27, "Sandshrew", "Tierra", 50, 75, 85, 40, "0.6m", "12.0kg"),
 		(28, "Sandslash", "Tierra", 75, 100, 110, 65, "1.0m", "29.5kg"),
-		(29, "Nidoran♀", "Veneno", 55, 47, 52, 41, "0.4m", "7.0kg"),
+		(29, "Nidoran", "Veneno", 55, 47, 52, 41, "0.4m", "7.0kg"),
 		(30, "Nidorina", "Veneno", 70, 62, 67, 56, "0.8m", "20.0kg"),
 		(31, "Nidoqueen", "Veneno/Tierra", 90, 82, 87, 76, "1.3m", "60.0kg"),
 		(32, "Nidoran♂", "Veneno", 46, 57, 40, 50, "0.5m", "9.0kg"),
