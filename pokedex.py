@@ -24,11 +24,19 @@ def mostrar_menu_inicial():
             if opcion_menu_inicial == 1:
                 clear_console()
                 mostrar_menu()
-                break
+                
 
             if opcion_menu_inicial == 2:
                 clear_console()
-                break
+                print("Esta funcionalidad esta pendiente de implementar.")
+                print("")
+                print("Pulse 0 para volver al menu principal.")
+                for pokemon in pokemons:
+                    opcion_del_menu_inicial = int(input("> "))
+                    if opcion_del_menu_inicial == 0:
+                        mostrar_menu_inicial()
+                    else:
+                        continue
 
             if opcion_menu_inicial == 3:
                 clear_console()
@@ -68,19 +76,26 @@ def mostrar_menu():
 
         if numero_pokemon == 0:
             clear_console()
-            break
+            mostrar_menu_inicial()
+            break  
 
-        clear_console()
-
-        mostrar_detalles_pokemon(numero_pokemon)
+        else:
+            mostrar_detalles_pokemon(numero_pokemon)
 
         print("0.Cerrar el programa.")
         print("1.Volver al menu de pokemons.")
         print("")
+        
         opcion_menu = int(input("> "))
         clear_console()
+
         if opcion_menu == 0:
-            break
+            mostrar_menu_inicial()
 
         if opcion_menu == 1:
             continue
+
+        if opcion_menu > 1 or opcion_menu < 0:
+            break
+            
+            
